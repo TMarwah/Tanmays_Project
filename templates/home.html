@@ -7,124 +7,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body style ="background-color:grey;">
-<h5>Andrew Crisostomo</h5>
-<h5>Ahmad Nasim</h5>
-<h5>Cody Peng</h5>
-<h5>Luca Pinto</h5>
-<h5>Mileta Vukovich</h5>
-<h5>Tanmay Marwah</h5>
 
-<div class="product" style="margin-top: 5%;">
-    <div class="row" style="padding: 5%; padding-top: 0%; padding-bottom: 0%;">
-
-        <div class="col-8">
-            <h1 style="color:Yellow;">SSH Shell Login</h1>
-        </div>
-
-    </div>
-
-    <div class="container" style="padding-left: 0%;">
-        <div class="item">
-            <a href="https://docs.google.com/document/d/13t2pk-3f1qSdgGQXizjIjrLYIU35mj19pajXCEup9og/edit" class="btn"><b>Project Plan</b></a>
-        </div>
-
-        <div class="item">
-            <a href="https://repl.it/@TMarwah/Team3-SSH-Login#main.py" class="btn"><b>Repl</b></a>
-        </div>
-
-        <div class="item">
-            <a href="http://nighthawkcoders.cf/courses/python/#flask-padlet" class="btn"><b>Resources</b></a>
-        </div>
-        <div class="item">
-            <a href="https://docs.google.com/document/d/1f-aT5hgvu_h0xv1gSOvz8Ls-oXVEXlLowsxZdkN6YZw/edit?usp=sharing" class="btn"><b>Journal(Mileta,Cody,Luca)</b></a>
-        </div>
-        <div class="item">
-            <a href="https://docs.google.com/document/d/1-UAGwPRwrVyJvLPtaW597b4U8GfcQATbWQZXWXvoxgo/edit?usp=sharing" class="btn"><b>Journal(Andrew,Ahmad,Tanmay)</b></a>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">SSH Login Flask Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/ssh">SSH Login</a>
+            <a class="nav-link" href="/flask">Flask Project</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </div>
     </div>
+</nav>
 
-</div>
 
 
-<div class="product" style="margin-top: 5%;">
-    <div class="row" style="padding: 5%; padding-top: 0%; padding-bottom: 0%;">
-
-        <div class="col-8">
-            <h1 style="color:Red;">Flask Series Project</h1>
-        </div>
-
-    </div>
-
-    <div class="container" style="padding-left: 0%;">
-        <div class="item">
-            <a href="https://docs.google.com/document/d/1oDSYDH4TLnrq1seO0PEO6nYHXbi3XMscEtPeNIbfMIk/edit?usp=sharing" class="btn"><b>Project Plan</b></a>
-        </div>
-
-        <div class="item">
-            <a href="https://repl.it/@TMarwah/Team3-SSH-Login#main.py" class="btn"><b>Repl</b></a>
-        </div>
-
-        <div class="item">
-            <a href="http://nighthawkcoders.cf/courses/python/#flask-padlet" class="btn"><b>Resources</b></a>
-        </div>
-        <div class="item">
-            <a href="https://docs.google.com/document/d/1f-aT5hgvu_h0xv1gSOvz8Ls-oXVEXlLowsxZdkN6YZw/edit?usp=sharing" class="btn"><b>Journal(Mileta,Cody,Luca)</b></a>
-        </div>
-        <div class="item">
-            <a href="https://docs.google.com/document/d/1-UAGwPRwrVyJvLPtaW597b4U8GfcQATbWQZXWXvoxgo/edit?usp=sharing" class="btn"><b>Journal(Andrew,Ahmad,Tanmay)</b></a>
-        </div>
-
-    </div>
-
-</div>
-
+<div id="vantatrunk"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.trunk.min.js"></script>
+<script>
+      VANTA.TRUNK({
+        el: "#vantatrunk",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 885.00,
+        minWidth: 1000.00,
+        scale: 40.00,
+        spacing: 25,
+        scaleMobile: 1.00,
+        chaos: 5.00
+      })
+  </script>
 </body>
+
+<p style="color:white;text-align:center;font-family:verdana">Andrew Crisostomo | Ahmad Nasim | Cody Peng | Luca Pinto | Mileta Vukovich | Tanmay Marwah</p>
+
+
+
+
+
 <style>
-	.fa:hover {
-		transform: translateY(10px);
+  .vantatrunk {
+		position: abosolute;
+    display: block;
+    min-width: 100%;
+    min-height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 
 	}
-
-	.btn:link,
-	.btn:visited {
-		text-transform: uppercase;
-		text-decoration: none;
-		display: inline-block;
-		border-radius: 100px;
-		transition: all .2s;
-		position: absolute;
-		color: white;
-		font-size: 0.8em;
-	}
-
-	.btn:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 15px 20px rgba(255, 255, 255, 0.2);
-        color:White;
-        background:black;
-	}
-
-	.btn:active {
-		transform: translateY(-1px);
-		box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
-	}
-
-	.container {
-		background: grey;
-		width: 1300px;
-		height: 50px;
-		/* height given for illustration */
-		display: flex;
-		flex-flow: row wrap;
-
-	}
-
-	.item {
-		background: grey;
-		margin: 15px;
-		flex: 0 1 calc(25% - 15px);
-		/* <-- adjusting for margin */
-	}
+	.center {
+  padding: 70px 0;
+  border: 3px solid green;
+}
 </style>
 </html>
